@@ -2,14 +2,15 @@
 
 #+TITLE: Computing With AWS
 #+AUTHOR: WLHarvey4
-#+DATE: <2018-12-11 Tue 22:13>
-#+MACRO: version 0.0.1
+#+DATE: \today
+#+MACRO: version 0.0.3
+#+MACRO: modification <2018-12-11 Tue 22:52>
 #+OPTIONS: H:4
 #+TEXINFO_FILENAME:aws.info
 #+TEXINFO_CLASS: info
 #+TEXINFO_HEADER:
 #+TEXINFO_POST_HEADER:
-#+SUBTITLE:Version {{{version}}} {{{time(%F %R)}}
+#+SUBTITLE:Version {{{version}}} {{{time(%F %R)}}}
 #+SUBAUTHOR:
 #+TEXINFO_DIR_CATEGORY: AWS
 #+TEXINFO_DIR_TITLE: Computing with AWS
@@ -25,19 +26,57 @@
 #+SUBTITLE:
 #+LATEX_COMPILER: pdflatex
 
+Version {{{version}}} {{{time(%F %R)}}}
+
 * AWS Developer
   This is a three-course series on developing on AWS.
-** Building on AWS (OTP-AWSD1)
-https://courses.edx.org/courses/course-v1:AWS+OTP-AWSD1+1T2018/course/
+** Building on AWS
+[[https://www.edx.org/course/aws-developer-building-on-aws][Building on AWS]]
 
-   This is the first course in the AWS Developer series.  This course
-   is designed to run over 6 weeks, but is self-paced.  As part of
-   this course, there will be hands-on exercises where you will get
-   the opportunity to use AWS services to build an application.  You
-   will do this using an AWS account that you will create as part of
-   the first week exercise.
+In this course, part of the AWS Developer Professional Series, you
+will gain confidence developing and deploying applications on the AWS
+platform. Throughout the course, working in Python on Linux, you will
+develop a web application building upon your developer skills and
+using AWS services and tools.
+
+Your AWS instructors will guide you through getting started with AWS,
+creating an account, and installing SDKs. Throughout the course, we
+will use hands-on exercises to build out a web application. In the
+class, we will utilize the AWS Free Tier to minimize any costs
+associated with running your application.
+
+You will use both the Amazon EC2 and AWS Lambda compute services, as
+well as learn about object stores by saving and accessing images and
+video in Amazon S3. You will use Amazon Rekognition to analyze images
+and video. Collected data will be managed using the Amazon Relational
+Database Service (RDS). You will refactor your application along the
+way, increase availability using load balancing, and improve
+performance and durability using messaging and queuing with the AWS
+SNS messaging service and Amazon SQS queuing service.
+
+Throughout the class, your instructors will introduce you to general
+AWS concepts such as Regions, Availability Zones, Virtual Private
+Clouds (VPCs), and Security Groups. You will use the AWS service APIs
+programmatically via AWS SDKs, the AWS CLI, and the AWS Cloud9 IDE.
+
+ - How to create and manage an AWS account
+ - AWS fundamental concepts including Regions, Availability Zones, and
+   Virtual Private Clouds (VPCs)
+ - How to install and use the AWS SDKs
+ - How to use AWS compute services, both via the AWS Console and
+   programmatically
+ - How to use AWS managed services such as Amazon RDS
+ - How to use Amazon AI image and text-to-speech applications
+ - How to make your applications more durable, distributed, and highly
+   available
 
 *** About the Course
+This is the first course in the AWS Developer series.  This course is
+designed to run over 6 weeks, but is self-paced.  As part of this
+course, there will be hands-on exercises where you will get the
+opportunity to use AWS services to build an application.  You will do
+this using an AWS account that you will create as part of the first
+week exercise.
 
 #+BEGIN_QUOTE
 [Russell] Do you currently work in software?
@@ -221,6 +260,18 @@ into Amazon Web Services.
 
 ***** Project Intro---What is being Built
 
+Will be building a Python Flask web application to upload and store
+images in a database.  It will have a user signup, with user
+registration, password, email validation, forgotten password resets,
+and secure user directory.  There will also be structured data for the
+owner and image description.  The labels for the photos will be
+generated automatically, which will require computer vision and deep
+learning algorithms.  Finally, the web app will print the photos,
+which will require communicating with the user's resources.  We will
+troubleshott performance issues and errors, and collect telemetry data
+to create a map of the services used by the application.
+
+****** Lecture
  #+BEGIN_QUOTE
  Let's take a sneak peak at the application
  we plan to build over the next six weeks
@@ -309,7 +360,7 @@ and we will come back to those in the following weeks.
 So let's get started building.
 #+END_QUOTE
 
-***** Transcript for Intro to Week One
+***** Lecture for Intro to Week One
 #+BEGIN_QUOTE
 - Welcome to week one.
 Week one is let's get you started.
@@ -343,3 +394,64 @@ So without further ado, let's get started.
 **** Cloud Infrastructure and Responsibility
 *** Week Two
 *** Week Three
+
+** Deploying on AWS
+[[https://www.edx.org/course/aws-developer-deploying-on-aws][Deploying on AWS]]
+Get hands-on training from AWS staff to deploy applications on the AWS
+platform.
+
+In this course, part of the AWS Developer Professional Series, you
+will learn how to use DevOps methodologies and tools. You will build
+and test your application using AWS Cloud9, and deploy to your
+cloud-based infrastructure with AWS Elastic Beanstalk. You will create
+a continuous integration/continous delivery (CI/CD) pipeline using AWS
+CodeBuild, AWS CodeCommit, and AWS CodePipeline.
+
+You will monitor your application and deployment using Amazon
+Cloudwatch, and create dashboards using Amazon Elasticsearch and
+Kibana to gather and catalog performance metrics.
+
+This course will have a significant hands-on component. Throughout the
+class, you will perform exercises using the AWS services covered. The
+exercises will utilize the AWS Free Tier to minimize any costs
+associated with running your application.
+
+ - How to use AWS developer tools including AWS Elastic Beanstalk, AWS
+   CloudFormation, AWS CodeBuild, AWS CodeDeploy, and AWS
+   CodePipeline.
+ - How to use AWS tools to monitor your development and production
+   environments. How to monitor application performance using AWS
+   tools including Amazon CloudWatch and Amazon Elasticsearch
+ - How to automate the development/staging/production process
+
+** Optimizing on AWS
+[[https://www.edx.org/course/aws-developer-optimizing-on-aws][Optimizing on AWS]]
+This course, part of the AWS Developer Professional Series, will focus
+on what you need to know to help you optimize your applications and
+optimize how you work in AWS.
+
+You will look at ways to improve utilization by using containers with
+the Amazon Elastic Container Service (Amazon ECS), caching services
+such as Amazon CloudFront and Amazon ElastiCache, and monitoring tools
+such as Amazon CloudWatch. You will look at serverless architectures
+using Amazon DynamoDB, Amazon API Gateway and, AWS Lambda. You will
+explore the AWS Command Line Interface (CLI), AWS Identity and Access
+Management (IAM) and learn how to use the AWS Key Management Service
+(KMS). You will finish off the class with a deep dive into AWS
+CloudFormation and a capstone exercise where you will debug a
+CloudFormation template.
+
+This course will have a significant hands-on component. Throughout the
+class, you will perform exercises using the AWS services covered. The
+exercises will utilize the AWS Free Tier to minimize any costs
+associated with running your application.
+
+ - How to use AWS Container Services
+ - How to improve application performance through techniques such as
+   caching
+ - How to optimize your applications by using serverless technologies
+   and autoscaling.
+ - How to use content distribution to improve the end-user experience
+ - How to use the AWS Command Line Interface (CLI)
+ - How to encrypt data at rest and in transit using the AWS Key
+   Management Service
