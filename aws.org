@@ -1,0 +1,345 @@
+# -*- mode: org; fill-column: 79; -*-
+
+#+TITLE: Computing With AWS
+#+AUTHOR: WLHarvey4
+#+DATE: <2018-12-11 Tue 22:13>
+#+MACRO: version 0.0.1
+#+OPTIONS: H:4
+#+TEXINFO_FILENAME:aws.info
+#+TEXINFO_CLASS: info
+#+TEXINFO_HEADER:
+#+TEXINFO_POST_HEADER:
+#+SUBTITLE:Version {{{version}}} {{{time(%F %R)}}
+#+SUBAUTHOR:
+#+TEXINFO_DIR_CATEGORY: AWS
+#+TEXINFO_DIR_TITLE: Computing with AWS
+#+TEXINFO_DIR_DESC: Courses from Coursera and edX
+#+TEXINFO_PRINTED_TITLE: Computing with AWS
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS:
+#+LATEX_HEADER:
+#+LATEX_HEADER_EXTRA:
+#+DESCRIPTION:
+#+KEYWORDS:
+#+SUBTITLE:
+#+LATEX_COMPILER: pdflatex
+
+* AWS Developer
+  This is a three-course series on developing on AWS.
+** Building on AWS (OTP-AWSD1)
+https://courses.edx.org/courses/course-v1:AWS+OTP-AWSD1+1T2018/course/
+
+   This is the first course in the AWS Developer series.  This course
+   is designed to run over 6 weeks, but is self-paced.  As part of
+   this course, there will be hands-on exercises where you will get
+   the opportunity to use AWS services to build an application.  You
+   will do this using an AWS account that you will create as part of
+   the first week exercise.
+
+*** About the Course
+
+#+BEGIN_QUOTE
+[Russell] Do you currently work in software?
+Are you looking to build your AWS knowledge?
+This is the course for anyone to gain knowledge
+in the AWS services, SDKs and APIs.
+Over six weeks we will build a Python Flask app on Linux
+where we'll use this application
+to answer many of the questions about AWS Services.
+You get hands on with Services
+and get the application up and running
+in your own environment.
+Together we will answer some common questions along the way.
+Which compute services do I use
+for my application?
+How do I solve my storage and database requirements?
+How will security or authentication work
+in those services?
+Or when users talk to my application?
+How can the many parts of my application
+be integrated using messaging queues and notifications?
+I'll be joined by my colleagues, Heiwad and Kai
+from AWS Training.
+So, come join us for this six-week developer-focused journey
+into Amazon Web Services.
+#+END_QUOTE
+**** Syllabus
+     1. [[Week One][Week One]]
+        A. [[Welcome to the Course][Welcome to the Course]]
+           - Welcome to Building on AWS
+           - Meet the Instructors
+           - Project Intro---What is being Built
+           - Intro to Week 1
+        B. [[Getting Started on AWS][Getting Started on AWS]]
+           - Why Build on AWS Cloud
+           - AWS Free Tier
+           - Exercise 1---Creating an AWS Account
+           - Service Oriented Architectures and APIs in AWS
+           - Exercise 2---Hello Amazon EC2
+        C. [[Cloud Infrastructure and Responsibility][Cloud Infrastructure and Responsibility]]
+           - Understanding AWS Structure
+           - Networking---Amazon Virtual Private Cloud (VPC)
+           - AWS vs. Developer Responsibility in the Cloud
+           - EC2 Metadata
+           - Exercise 3---Logs-SSH-Instance Metadata
+        D. Resources
+     2. Week Two
+        A. Invoking AWS APIs/ AWS Identity and Access Management (IAM)
+           - Create an AWS IAM user/access key video
+           - Exercise 4---AWS IAM User-CLI-Boto-Access Keys
+           - AWS APIs
+        B. Amazon S3
+           - Intro to Amazon S3
+           - Amazon S3 Access Control
+        C. Working with our Development Environment
+           - Developing on AWS Cloud
+           - Exercise 5---AWS Cloud 9
+        D. Amazon Rekognition
+           - Introduction to Amazon Rekognition
+           - Exercise 6---Amazon Rekognition
+        E. Resources
+     3. Week Three
+        A. Storing Structured Data using AWS Managed Databases
+           - AWS IAM Roles
+           - Amazon Relational Database Service
+           - Exercise 7---Amazon RDS
+        B. Availability and Application Failure
+           - Availability
+           - What could go wrong
+           - Elastic Load Balancer
+           - Exercise 8---Deploy an instance add ALB
+        C. Resources
+
+*** Week One
+
+**** Welcome to the Course
+
+***** Welcome to Building on AWS
+
+  #+BEGIN_QUOTE
+  Hello and welcome
+  to the AWS Developer Professional series.
+  I'm Russell Sayers, a technical architect
+  in the AWS training and certification team.
+  I'll be leading you over the course
+  over the next six weeks
+  with two other instructors
+  you will meet shortly.
+  Building on AWS is the first of three courses
+  with a development focus.
+  This is the course for someone working in software
+  who wants to build their AWS knowledge.
+  If you love software
+  and you want to take your first steps
+  in the AWS cloud, then this is the course for you
+  or maybe you have worked with AWS services
+  and are looking to build upon your knowledge,
+  so join us whether you're about to start
+  on your next software project
+  hosted in AWS or just looking
+  to build your skills.
+  Throughout the course we will build a small web application
+  with Python Flask and Linux.
+  As the course progresses,
+  we'll address new challenges
+  and features in the application
+  and work with a series of AWS services
+  to improve and refactor the application.
+  We start the course with the fundamentals.
+  First you create an account,
+  then let's start building.
+  We can take advantage of the very generous AWS free tier.
+  We've made the decision the application
+  will use Python Flask,
+  so we plan to turn on compute resources
+  running Linux to host our application.
+  We look at how to talk to many of the AWS services
+  from our applications using the APIS
+  or the many SDKs available
+  for lots of languages.
+  In the course exercises,
+  we work with the code in AWS Cloud9,
+  the browser-based IDE
+  but this is up to you.
+  Anyone with a background in Python
+  and a little extra exploration,
+  the exercises can be completed
+  in the editor of your choice.
+  Just about every application I have worked on
+  has storage requirements.
+  In our first week we'll complete
+  a simple application
+  that can store images on Amazon S3,
+  a fundamental AWS storage service.
+  We extend the application
+  to store relational data
+  in a MySQL database
+  operated by Amazon Relational Database Service.
+  From there we look at many AWS services
+  to solve problems like deployment,
+  how are users going to sign into the application,
+  distributed tracing,
+  serverless compute, messaging queues
+  and pub-sub messaging.
+  The time commitment
+  for this self-paced course is roughly three to four hours
+  a week over six weeks.
+  The course is designed for those
+  that have one or more years software experience.
+  The majority of the code
+  is written and supplied.
+  If you're experienced with Python programming
+  there are optional suggested enhancements
+  and you are most definitely welcome
+  to alter and improve upon the application code.
+  In fact, we encourage this
+  and we would love to see your code updates
+  in the course discussion forums.
+  So, let's get started with the course.
+  #+END_QUOTE
+
+***** Meet the Instructors
+
+  #+BEGIN_QUOTE
+  Hey I'm Kai Dupe,
+  I'm a technical trainer for Amazon Web Services.
+  I've been in software development for about 30 years.
+
+  Hi, my name is Russell Sayers, I am a technical architect
+  in the training and certification team.
+  I've been working in software for 20 years,
+  I've been at Amazon for five years,
+  and AWS for three and a half years.
+
+  Hi, my name is Heiwad Osman,
+  and I'm a technical trainer with Amazon Web Services.
+  I've been working with software development teams
+  for a little over 10 years.
+  Kai, Russ, and I will see you in the class soon.
+  #+END_QUOTE
+
+***** Project Intro---What is being Built
+
+ #+BEGIN_QUOTE
+ Let's take a sneak peak at the application
+ we plan to build over the next six weeks
+ and get a quick look behind the scenes.
+ Like a lot of web applications
+ our users will be signing up
+ to access the application
+ and this comes with some pretty standard requirements,
+ a secure user directory, user registration,
+ password requirements, email validation,
+ forgotten password resets,
+ just to name a few.
+ Once you're inside the application,
+ you can upload a photo with a description.
+ The application stores your collection of images,
+ so we have some storage requirements
+ for the image files
+ plus structured data for the photo owner and description.
+ Along with the description of the photo,
+ we are storing automatically generated labels for each image
+ and these labels are not created by a human,
+ we need computer vision and deep learning algorithms
+ integrated into our application
+ and for one extra requirement
+ we plan to print the photos for our application customers.
+ We now have the need to communicate
+ the application's upload event
+ back to our on premises for processing and printing.
+ As we get ready for production,
+ we need to identify and troubleshoot
+ the root cause of performance issues and errors.
+ Let's collect this telemetry data
+ from a sampling of application requests
+ and we can use this to build a map of the services
+ used by the application
+ to take latency and identify any errors.
+ Now we can jump into the application.
+ I have a build ready to go on my laptop here.
+ This is the front page.
+ I can click through to the log in
+ and from the log in screen
+ I also have the ability to sign up for the application.
+ I have already signed up,
+ so I can jump back and sign in.
+ Once I'm signed in,
+ there's access to the My Photos
+ which is the place where I can upload the photos.
+ I can also access that from my phone,
+ so let's try that from my phone.
+ I'm going to take a selfie here in the studio,
+ so let's take a photo,
+ flip the camera around for the selfie mode
+ and pose,
+ snap and upload.
+ That's being uploaded
+ and on my left here
+ is a screen representing our on-premises processing.
+ Remember, the event of the upload
+ is being communicated back to our on premises
+ being represented by our Raspberry pi here
+ and we now have our application
+ where we need it for processing
+ and back to the laptop,
+ if I reload the My Photos screen,
+ we can see exactly the photo I just took
+ and we can also see some labels
+ that were attached by that deep learning algorithm.
+ It's telling me that I'm a human,
+ I'm a people, I'm a person,
+ I have glasses, that sounds good to me.
+ So, that's a very, very quick introduction
+ to the app that we will be building
+ over the next six weeks through this course.
+ #+END_QUOTE
+
+***** Intro to Week 1
+
+***** Objectives for Week One
+#+BEGIN_QUOTE
+[Instructor] At the end of week one,
+we will have turned on an EC2 instance.
+This instance is where we have our Linux operating system
+and that's where we will be hosting our application.
+There's a few other icons on here
+and we will come back to those in the following weeks.
+So let's get started building.
+#+END_QUOTE
+
+***** Transcript for Intro to Week One
+#+BEGIN_QUOTE
+- Welcome to week one.
+Week one is let's get you started.
+We want to get you up and running in the AWS Cloud.
+You will first create an account
+and learn about the AWS free tier.
+With the free tier, there is both 12 month free
+and always free usage on a lot of our services.
+Week one is focused on infrastructure concepts,
+defining where things live in the AWS Cloud.
+Some of these concepts might already be familiar
+from your current work.
+We can see how the same concepts apply in AWS.
+This is the week where we get our first look at Amazon EC2,
+our web service to provide secure,
+re-sizable compute capacity.
+The application we're building through the course
+will need a place to run the Linux operating system.
+With EC2, we can create the virtual instance
+where this will run.
+We will also learn about the metadata security
+and networking features available to EC2.
+Once we have our Linux instance running,
+we can perform some remote administration.
+We do this by using SSH to connect to our instance.
+So without further ado, let's get started.
+#+END_QUOTE
+
+**** Getting Started on AWS
+
+**** Cloud Infrastructure and Responsibility
+*** Week Two
+*** Week Three
