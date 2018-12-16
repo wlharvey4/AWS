@@ -1,0 +1,30 @@
+- So as we look at what is a region, we want to ask what is a
+region actually made of? What are the pieces that
+together comprise this geographically separate area? At AWS a region is a collection of availability zones. Now you can think of an availability zone as if it was a standalone data center. Now the truth is at AWS an
+availability zone might actually be more than one data
+center, but we don't make a big deal about that. For us this single object while it might be two or three buildings and might be spread across
+a parking lot we call this one availability zone
+because it's logically treated as that. Inside a region we always
+have at least two availability zones separated by miles of distance, tens of miles of distance. And we do this specifically
+to protect you against what? Your lizard friend. Yes, your favorite lizard and mine can be unfortunately a cause of problems for your application because
+when your lizard friend comes to be angry in a particular area, your lizard friend is going to find your set of data centers, an
+availability zone perhaps and by dancing around
+could cause enough trouble that you could lose
+connectivity to everything in that availability zone. At AWS we don't want you to
+have to worry about that. So a region is made up of
+multiple availability zones. And you don't have to worry
+about the distance between them because AWS connects
+those availability zones with a proprietary high
+speed fiber network, multiple lines between
+every availability zone so you can treat it as a single area. But you run your application
+simultaneously across all of the availability zones. You might have application servers that run in both AZs. And you might have a database where you've got your master
+in one availability zone that connects to a standby in a different availability zone. The idea is it doesn't matter
+what might happen to an availability zone, because
+maybe it's not your lizard friend this time but there
+might be some other natural disaster, a hurricane,
+a tornado, an earthquake that we don't want you to worry about. It doesn't matter if
+there's a temporary loss of connectivity to an
+availability zone because your application runs in both
+of them at the same time. This is how you can not only
+be effective, be scalable, but also highly available
+all while running in a single region of your choice.

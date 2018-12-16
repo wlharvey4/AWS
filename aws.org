@@ -2,17 +2,18 @@
 
 #+TITLE: AWS
 #+SUBTITLE: Fundamentals of Developing and Computing in the Cloud
+#+SUBTITLE: Version
 #+AUTHOR: WLHarvey4
+#+SUBAUTHOR: AWS
 #+DATE: \today
 
-#+MACRO: version 0.0.5
-#+MACRO: modification <2018-12-15 Sat 16:22>
+#+MACRO: version 0.0.6
+#+MACRO: modification <2018-12-15 Sat 18:30>
 #+OPTIONS: H:4
 #+TEXINFO_FILENAME:aws.info
 #+TEXINFO_CLASS: info
 #+TEXINFO_HEADER:
 #+TEXINFO_POST_HEADER:
-#+SUBAUTHOR:
 #+TEXINFO_DIR_CATEGORY: AWS
 #+TEXINFO_DIR_TITLE: Computing with AWS
 #+TEXINFO_DIR_DESC: Courses from Coursera and edX
@@ -462,6 +463,8 @@ associated with running your application.
    and infrastructure. Through demonstrations you'll learn how to use and
    configure AWS services to deploy and host a cloud-native application.
 
+   [[https://www.coursera.org/learn/aws-fundamentals-going-cloud-native/home/welcome][Click Here]] to go to course on Coursera.
+
 ** About
    Early in the course, your AWS instructors will discuss how the AWS cloud
    infrastructure is built, walk you through Amazon Elastic Compute Cloud
@@ -575,6 +578,9 @@ services, infrastructure, and compute services.
    - Explain what is Amazon LightSail
 
 **** Introduction
+
+***** Welcome [Transcript]
+      [[file:aws_fundamentals/week1-lec01-welcome.txt][Welcome]] [[file:aws_fundamentals/week1-lec01-welcome.pdf][PDF]]
 
 ***** Welcome
       Throughout this class, there will be additional optional and required
@@ -831,3 +837,7 @@ services, infrastructure, and compute services.
       - Describe the AWS Shared Security Model
       - Interpret the output of the AWS Cost Explorer and Trusted Advisor tools
 
+* Index
+  :PROPERTIES:
+  :index:    cp
+  :END:

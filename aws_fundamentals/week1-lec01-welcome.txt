@@ -1,0 +1,83 @@
+# -*- mode: org; fill-column: 79; -*-
+
+#+TITLE: Welcome to AWS Fundamentals
+#+SUBTITLE: Going Cloud-Native
+#+SUBTITLE: AWS
+#+AUTHOR:
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS:
+#+LATEX_HEADER:
+#+LATEX_HEADER_EXTRA:
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_COMPILER: pdflatex
+#+DATE: \today
+#+OPTIONS: H:4 toc:nil
+
+* Welcome
+Welcome to the AWS Fundamental Series on Coursera. I'm Allen Goldberg,
+Technical Program Manager in AWS Training and Certification. In this class,
+Going Cloud Native, we will focus on some key technology areas and
+services.
+
+** Compute
+   - Amazon Elastic Compute Cooud
+   - Amazon Lightsail
+   - Virtual Private Cloud networking technology
+
+ Specifically, for compute, we will look at Amazon Elastic Compute Cloud and
+ Amazon Lightsail. We will discuss virtual private cloud and other networking
+ technologies.
+
+** Storage
+   + Amazon S3
+   + Elastic Block Storage
+   + Elastic File Service
+   + Amazon DynamoDB
+   + Amazon Relational Database Service
+
+ For storage. we'll see how to use Amazon S3, Elastic Block Storage, and
+ Elastic File Service. We'll also explore Amazon DynamoDB and Amazon Relational
+ Database Service.
+
+** Monitor and Scale
+   + Amazon CloudWatch and Auto Scaling
+
+ How do you monitor and scale your application environment?  We'll use Amazon
+ CloudWatch and Auto Scaling.
+
+** Secure
+
+ Finally, we'll examine how you can secure your environment in AWS and manage
+ cost.
+
+** Cloud-based App
+   + AWS Management Console
+
+ We'll do all of this through a cloud-based application that we'll build over
+ the course of the class. The app stores images and information about fictional
+ employees in a company. There's no coding requirement for this course. All of
+ the examples and demonstrations, we'll use the AWS Management Console.
+
+** Instructors
+
+ I will be joined in this class by two of my AWS Training and Certification
+ colleagues, Blaine Sundrud and Morgan Willis.  In the next segment, we'll
+ introduce ourselves and then move on to course content.
+
+** Course Content
+   + AWS Regions and Availability Zones
+   + Compute Services
+   + Amazon Elastic Compute Cloud (EC2)
+   + Amazon Lightsail
+
+ Blaine will begin with an overview of AWS, where he'll talk about AWS Regions
+ and Availability Zones, and why they matter. Morgan will then walk you through
+ our application, introduce you to compute services, and dive deeper into
+ Amazon Elastic Compute Cloud, or EC2. Blaine will finish up the first module
+ with a look at Amazon Lightsail, a service that allows you to quickly and
+ easily spin up entire web-based application servers with just a few
+ clicks. Along the way, there'll be quizzes and links to resources to help make
+ sure you're on the right track. So, again, welcome to Going Cloud Native on
+ AWS. As we say at Amazon, work hard, have fun, make history.
