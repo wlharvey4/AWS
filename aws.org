@@ -2,14 +2,12 @@
 
 #+TITLE: AWS
 #+SUBTITLE: Fundamentals of Developing and Computing in the Cloud
-#+SUBTITLE: Version
 #+AUTHOR: WLHarvey4
 #+SUBAUTHOR: AWS
 #+DATE: \today
 
-#+MACRO: version 0.0.6
-#+MACRO: modification <2018-12-15 Sat 18:30>
-#+OPTIONS: H:4
+#+MACRO: version 0.0.7
+#+MACRO: modification <2018-12-15 Sat 18:56>
 #+TEXINFO_FILENAME:aws.info
 #+TEXINFO_CLASS: info
 #+TEXINFO_HEADER:
@@ -19,14 +17,14 @@
 #+TEXINFO_DIR_DESC: Courses from Coursera and edX
 #+TEXINFO_PRINTED_TITLE: Computing with AWS
 
-#+LATEX_CLASS: article
+#+LATEX_CLASS: book
 #+LATEX_CLASS_OPTIONS:
 #+LATEX_HEADER:
 #+LATEX_HEADER_EXTRA:
 #+DESCRIPTION:
 #+KEYWORDS:
-#+SUBTITLE:
 #+LATEX_COMPILER: pdflatex
+#+OPTIONS: H:5
 
 Version {{{version}}} {{{time(%F %R)}}}
 
@@ -605,6 +603,8 @@ services, infrastructure, and compute services.
 
 **** Infrastructure
 
+***** AWS Overview
+      [[file:aws_fundamentals/week1-lec03-aws_overview.txt][AWS Overview]] [[file:aws_fundamentals/week1-lec01-welcome.pdf][PDF]]
 ***** What Is Cloud Computing
 :CI:
 #+CINDEX: cloud computing
@@ -613,7 +613,8 @@ services, infrastructure, and compute services.
       storage, applications, and other IT resources through a cloud services
       platform via the internet with pay-as-you-go pricing.
 
-      Additional information is available at: https://aws.amazon.com/what-is-cloud-computing/.
+      Additional information is available at:
+      https://aws.amazon.com/what-is-cloud-computing/.
 
 ****** Six Advantages and Benefits of Cloud Computing
        + Trade capital expenses for variable expense

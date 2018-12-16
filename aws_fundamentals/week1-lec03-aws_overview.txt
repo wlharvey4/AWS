@@ -1,1 +1,131 @@
-Welcome back, Blaine here. Today, we want to talk about an introduction to AWS, to its services. But to do that, I really want us to look at the question, what is cloud? What is AWS? There's many definitions out there, but the one that we're going to go with for this course is the idea of an on-demand, pay-as-you-go, IT services that are delivered over the internet. Each one of those parts are important. The idea of an on-demand service, that you don't have to make any advanced contracts with us, you don't have to let us know what's needed. The moment you need services like storage and compute or networking, they're available immediately without any advanced contract, which goes the same as pay-as-you-go. That, you don't have to have any prepaid tier, there's no minimum requirement needed to be part of AWS. Delivered over the internet, means it's secure and available anywhere for you and your business. That's what cloud is. But a better question, why is cloud? Why does AWS exist in the first place? People might say, "Well, it's just a substitute for what you have on-premises." I disagree with that statement. Instead, a better answer to why AWS exists, is to look at the idea of IT as a series of actions, and some of them are very important to your business, and some of them are common everywhere. Everybody needs compute, everyone needs storage, everyone needs identity management. AWS exists to eliminate those undifferentiated heavy lifting tasks that your IT department needs, that everyone's IT department needs. This means your business can spend time working on what is strategically unique to you rather than repetitive common tasks that everyone has to do. So, what are the things that make up the AWS Cloud? Well, there are some obvious things we've already talked about. This idea of compute. Common areas where you can do all your calculations, storage of all different types, networking that allows you to have your own private network, while at the same time allowing it exactly who you want to have be part of your application. But AWS, we go so far beyond that, and there's many other things that are not so obvious at first blush. AWS has a high level of security with many security features written especially for your operations team. We have automation suites designed to deploy all of your applications, all of your databases, all of your environments automatically. We have database as a service. DevOps, which can be delivered soup to nuts right there as part of the services that we offer. Media services, artificial intelligence, machine learning, ML, Internet of Things, IoT, services like game development, identity management, augmented reality, virtual reality, big data analytics, and the list keeps going on. We have over 150 unique services at AWS, and that list continues to grow year after year. The pace of innovation AWS is one of the important factors we bring, that we're constantly adding, constantly innovating on behalf of you, our customers. We even have a partner network designed to answer questions that may be specific to you and your vertical. The AWS Partner Network, APN, along with the AWS Marketplace, can provide on-demand solutions, pay-by-the-hour solutions, that will allow your company to get exactly what it needs, when it needs it. All right. Next topic, let's look how AWS distributes our services globally.
+# -*- mode: org; fill-column: 79; -*-
+
+#+TITLE: AWS Overview
+#+SUBTITLE: What is Cloud? Why is Cloud?
+#+AUTHOR:
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS:
+#+LATEX_HEADER:
+#+LATEX_HEADER_EXTRA:
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_COMPILER: pdflatex
+#+DATE: \today
+#+OPTIONS: H:5 toc:nil
+
+* Introduction to AWS
+
+Welcome back, Blaine here. Today, we want to talk about an introduction to AWS,
+to its services.
+
+** What is Cloud • What is AWS
+
+But to do that, I really want us to look at the question, what is cloud? What
+is AWS? There's many definitions out there, but the one that we're going to go
+with for this course is the idea of
+
+#+BEGIN_QUOTE
+
+an on-demand, pay-as-you-go, IT services that are delivered over the
+internet.
+
+#+END_QUOTE
+
+Each one of those parts are important.
+
+*** On-Demand Service
+
+The idea of an on-demand service, that you don't have to make any advanced
+contracts with us, you don't have to let us know what's needed. The moment you
+need services like storage and compute or networking, they're available
+immediately without any advanced contract,
+
+*** Pay-As-You-Go
+
+which goes the same as pay-as-you-go. That, you don't have to have any prepaid
+tier, there's no minimum requirement needed to be part of AWS.
+
+*** Delivered Over The Internet
+
+Delivered over the internet, means it's secure and available anywhere for you
+and your business.
+
+*** Cloud
+
+That's what cloud is.
+
+** Why Is Cloud • Why Does AWS Exist
+
+But a better question, ``why is cloud?  Why does AWS exist in the first
+place?''  People might say, ``Well, it's just a substitute for what you have
+on-premises.''  I disagree with that statement.
+
+*** IT As a Series of Actions
+
+Instead, a better answer to why AWS exists, is to look at the idea of IT as a
+series of actions, and some of them are very important to your business, and
+some of them are common everywhere. Everybody needs compute, everyone needs
+storage, everyone needs identity management.
+
+*** AWS Eliminates Undifferentiated Tasks
+
+AWS exists to eliminate those undifferentiated heavy lifting tasks that your IT
+department needs, that everyone's IT department needs. This means your business
+can spend time working on what is strategically unique to you rather than
+repetitive common tasks that everyone has to do.
+
+** What is AWS Cloud
+
+So, what are the things that make up the AWS Cloud? Well, there are some
+obvious things we've already talked about.
+
+*** Compute • Storage • Networking
+
+This idea of compute. Common areas where you can do all your calculations,
+storage of all different types, networking that allows you to have your own
+private network, while at the same time allowing it exactly who you want to
+have be part of your application.
+
+**** Additional Services
+
+But AWS, we go so far beyond that, and there's many other things that are not
+so obvious at first blush.
+
+***** Security
+
+AWS has a high level of security with many security features written especially
+for your operations team.
+
+***** Automation
+
+ We have automation suites designed to deploy all of your applications, all of
+your databases, all of your environments automatically.
+
+***** Database as a Service
+
+We have database as a service.
+
+***** DevOps
+
+DevOps, which can be delivered soup to nuts right there as part of the services
+that we offer.
+
+***** Other
+
+Media services, artificial intelligence, machine learning, ML,
+Internet of Things, IoT, services like game development, identity management,
+augmented reality, virtual reality, big data analytics, and the list keeps
+going on.
+
+*** 150 Services
+
+We have over 150 unique services at AWS, and that list continues to grow year
+after year. The pace of innovation AWS is one of the important factors we
+bring, that we're constantly adding, constantly innovating on behalf of you,
+our customers. We even have a partner network designed to answer questions that
+may be specific to you and your vertical. The AWS Partner Network, APN, along
+with the AWS Marketplace, can provide on-demand solutions, pay-by-the-hour
+solutions, that will allow your company to get exactly what it needs, when it
+needs it. All right. Next topic, let's look how AWS distributes our services
+globally.
