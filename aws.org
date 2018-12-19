@@ -6,7 +6,7 @@
 #+SUBAUTHOR: AWS
 #+DATE: \today
 
-#+MACRO: version 0.0.7
+#+MACRO: version 0.0.8
 #+MACRO: modification <2018-12-15 Sat 18:56>
 #+TEXINFO_FILENAME:aws.info
 #+TEXINFO_CLASS: info
@@ -28,6 +28,85 @@
 
 Version {{{version}}} {{{time(%F %R)}}}
 
+* AWS Tutorials
+
+** Launch a Linux Virtual Machine with EC2
+:CI:
+#+CINDEX: EC2
+#+CINDEX: Elastic Cloud Compute
+#+CINDEX: instances
+#+CINDEX: virtual machines
+:END:
+   [[https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/][Launch a Linux Virtual Machine]]
+
+   [[https://aws.amazon.com/ec2/][Amazon Elastic Compute Cloud (EC2)]] is the Amazon Web Service you use to
+   create and run virtual machines in the cloud. AWS calls these virtual
+   machines 'instances'. This step-by-step guide will help you successfully
+   launch a Linux virtual machine on Amazon EC2 within our AWS Free Tier.
+
+   *Did you know?* AWS made it even easier to launch a Linux virtual private
+   server. Jumpstart your virtual machine with [[https://lightsail.aws.amazon.com/ls/webapp/home/resources][Amazon Lightsail]].
+
+*** Sign-up for AWS
+    There are no additional charge for Amazon EC2 for this tutorial. The
+    resources you create in this tutorial are Free Tier eligible. The button
+    and the link open a new tab so you can follow this tutorial in the AWS
+    console.
+
+    [[https://portal.aws.amazon.com/billing/signup#/start][Sign Up For AWS]]
+
+    Have an account? [[https://aws.amazon.com/][Sign In]]
+
+*** Launch an Amazon EC2 Instance
+    a. Enter the Amazon EC2 Console
+
+       Open the *AWS Management Console*, so you can keep this step-by-step
+       guide open. When the screen loads, enter your user name and password to
+       get started. Then type EC2 in the search bar and select *Amazon EC2* to
+       open the service console.
+
+       [[https://console.aws.amazon.com/ec2/v2/home][Go to the console page]]
+
+    b. Launch an Instance
+
+       Select *Launch Instance* to create and configure your virtual machine.
+
+*** Configure Your Instance
+    You are now in the *EC2 Launch Instance Wizard*, which will help you
+    configure and launch your instance.
+
+    a. In this screen, you are shown options to choose an *Amazon Machine
+       Image* (AMI). AMIs are preconfigured server templates you can use to
+       launch an instance. Each AMI includes an operating system, and can also
+       include applications and application servers.
+
+       For this tutorial, find /Amazon Linux AMI/ and click *Select*.
+
+    b. You will now choose an instance type. Instance types comprise of varying
+       combinations of CPU, memory, storage, and networking capacity so you can
+       choose the appropriate mix for your applications. For more information,
+       see [[https://aws.amazon.com/ec2/instance-types/][Amazon EC2 Instance Types]].
+
+       The default option of ~t2.micro~ should already be checked. This
+       instance type is covered within the Free Tier and offers enough compute
+       capacity to tackle simple workloads. Click *Review and Launch* at the
+       bottom of the page.
+
+    c. You can review the configuration, storage, tagging, and security
+       settings that have been selected for your instance. While you have the
+       option to customize these settings, we recommend accepting the default
+       values for this tutorial.
+
+       Click Launch at the bottom of the page.
+
+    d. On the next screen you will be asked to choose an existing key pair or
+       create a new key pair. A key pair is used to securely access your Linux
+       instance using SSH. AWS stores the public part of the key pair which is
+       just like a house lock. You download and use the private part of the key
+       pair which is just like a house key.
+
+       Select *Create a new key pair* and give it the name *MyKeyPair*. Next
+       click the *Download Key Pair* button.
 * AWS Developer
   This is a three-course series on developing on AWS.
 ** Building on AWS
